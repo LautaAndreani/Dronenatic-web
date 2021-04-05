@@ -1,0 +1,16 @@
+ScrollReveal().reveal('.marcas-distribuidas',{delay: 500});
+ScrollReveal().reveal('.tarjetas-compra',{delay: 500});
+ScrollReveal().reveal('.tarjetas-contenedor',{delay: 500});
+ScrollReveal().reveal('.grid-vendido',{delay: 500});
+ScrollReveal().reveal('.fondo-productos',{delay: 500});
+ScrollReveal().reveal('.contenedor-2',{delay: 500});
+ScrollReveal().reveal('.conocenos',{delay: 400});
+ScrollReveal().reveal('.imagen-soporte',{delay: 500});
+ScrollReveal().reveal('.ayuda-buscador',{delay: 500});
+ScrollReveal().reveal('.bg-tarjetas',{delay: 500});
+ScrollReveal().reveal('#subtitulo-soporte',{delay: 500});
+ScrollReveal().reveal('.testimonios',{delay: 500});
+ScrollReveal().reveal('#testimonios-h2',{delay: 500});
+ScrollReveal().reveal('.testimonios-tittle',{delay: 500});
+ScrollReveal().reveal('.add-comm',{delay: 500});
+ScrollReveal().reveal('#exp',{delay: 500});
