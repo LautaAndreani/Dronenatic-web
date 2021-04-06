@@ -13,13 +13,14 @@ html {
 
 /* Whatsapp btn*/
 .btn-wsp {
+  display: float;
   position: fixed;
   z-index: 1;
   width: 55px;
   height: 55px;
   line-height: 55px;
   bottom: 30px;
-  left: 20px;
+  left: 1800px;
   background-color: #25d366;
   text-align: center;
   border-radius: 40px;
@@ -46,14 +47,18 @@ header {
     width: 100%;
     height: 6rem;
     justify-content: flex-end; }
+    header nav #check {
+      display: none; }
+    header nav .checkbtn {
+      display: none;
+      color: white; }
     header nav .img-logo {
       margin-right: auto;
       width: 20%; }
       header nav .img-logo #logo-header {
         width: 90%; }
       header nav .img-logo #logotipo-solo {
-        opacity: 0;
-        display: flex;
+        display: none;
         justify-content: center;
         align-items: center;
         width: 3rem;
@@ -153,7 +158,7 @@ header {
 
 /* Marcas distribuidas */
 #subtitulo-marcas {
-  margin: 1rem 0;
+  margin: 1.7rem 0;
   text-align: center; }
 
 .marcas-distribuidas {
@@ -1139,6 +1144,8 @@ footer {
 
 /* contacto */
 @media screen and (max-width: 1024px) {
+  .btn-wsp {
+    left: 900px; }
   .contenedor-form .contacto .contacto__title {
     width: 100%;
     display: flex;
@@ -1288,6 +1295,57 @@ footer {
   background-color: black; }
 
 @media screen and (max-width: 768px) {
+  .btn-wsp {
+    left: 650px; }
+  header nav #check {
+    display: none; }
+  header nav .checkbtn {
+    cursor: pointer;
+    margin: 0 3rem;
+    position: absolute;
+    display: block;
+    padding: .5rem;
+    text-align: center;
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid lightgray;
+    border-radius: 5px; }
+  header nav #check:checked ~ .nav-bar li a {
+    left: 37px; }
+  header nav .img-logo {
+    margin-right: auto;
+    width: 20%; }
+    header nav .img-logo #logo-header {
+      width: 90%; }
+    header nav .img-logo #logotipo-solo {
+      display: block;
+      justify-content: center;
+      align-items: center;
+      width: 3rem;
+      top: 1.7rem;
+      position: absolute;
+      left: 2.7rem; }
+  header nav ul {
+    list-style: none; }
+    header nav ul li {
+      margin: 0 2rem; }
+      header nav ul li a {
+        left: -100%;
+        top: 9.2rem;
+        margin: 0 auto;
+        width: 45.3rem;
+        text-align: center;
+        position: relative;
+        display: inline-block;
+        background-color: rgba(0, 0, 0, 0.7);
+        backdrop-filter: blur(10px); }
+      header nav ul li #contacto {
+        border: 2px solid #c03036;
+        border-radius: 10px; }
+        header nav ul li #contacto:hover {
+          border: 2px solid white;
+          background-color: white;
+          color: #c03036; }
   .inicio-web {
     width: 100%;
     text-align: center; }
@@ -1304,7 +1362,7 @@ footer {
           line-height: 3rem; }
     .inicio-web .imagen-index {
       margin-top: -10rem;
-      width: 90%; }
+      width: 100%; }
       .inicio-web .imagen-index img {
         width: 90%; }
   .image-logo {
@@ -1458,25 +1516,57 @@ footer {
   .logo-footer {
     display: none; } }
 
-@media screen and (max-width: 480px) and (min-width: 320px) {
-  nav {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%; }
-    nav .img-logo {
-      display: none; }
-      nav .img-logo a img {
-        width: 10rem; }
-    nav .nav-bar {
-      margin: 0 auto;
-      width: 100%; }
-      nav .nav-bar li {
-        width: 100%; }
-        nav .nav-bar li a {
-          font-size: .8rem;
-          padding: 0px 8px; }
-        nav .nav-bar li #contacto {
-          border: none; }
+@media screen and (max-width: 500px) {
+  .btn-wsp {
+    left: 400px; }
+  header nav #check {
+    display: none; }
+  header nav .checkbtn {
+    cursor: pointer;
+    margin: 0 3rem;
+    position: absolute;
+    display: block;
+    padding: .5rem;
+    text-align: center;
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid lightgray;
+    border-radius: 5px; }
+  header nav #check:checked ~ .nav-bar li a {
+    left: 170px; }
+  header nav .img-logo {
+    margin-right: auto;
+    width: 20%; }
+    header nav .img-logo #logo-header {
+      width: 90%; }
+    header nav .img-logo #logotipo-solo {
+      display: block;
+      justify-content: center;
+      align-items: center;
+      width: 3rem;
+      top: 1.7rem;
+      position: absolute;
+      left: 2.7rem; }
+  header nav ul {
+    list-style: none; }
+    header nav ul li {
+      margin: 0 2rem; }
+      header nav ul li a {
+        left: -100%;
+        top: 9.2rem;
+        margin: 0 auto;
+        width: 45.3rem;
+        text-align: center;
+        position: relative;
+        display: inline-block;
+        background-color: rgba(0, 0, 0, 0.7); }
+      header nav ul li #contacto {
+        border: 2px solid #c03036;
+        border-radius: 10px; }
+        header nav ul li #contacto:hover {
+          border: 2px solid white;
+          background-color: white;
+          color: #c03036; }
   .inicio-web {
     width: 100%;
     text-align: center; }
@@ -1522,23 +1612,23 @@ footer {
       width: 90%; }
   @keyframes slider {
     0% {
-      margin-top: -2%; }
+      margin-top: 0; }
     20% {
-      margin-top: -2%; }
+      margin-top: 0; }
     25% {
-      margin-top: -87%; }
+      margin-top: -72%; }
     45% {
-      margin-top: -87%; }
+      margin-top: -72%; }
     50% {
-      margin-top: -170%; }
+      margin-top: -145%; }
     70% {
-      margin-top: -170%; }
+      margin-top: -145%; }
     75% {
-      margin-top: -260%; }
+      margin-top: -218%; }
     100% {
-      margin-top: -260%; } }
+      margin-top: -218%; } }
   .comparte-exp {
-    width: 100%;
+    width: 90%;
     font-size: 1rem; }
   /*productoIndividual */
   .contenedor-ventas {
@@ -1642,12 +1732,19 @@ footer {
     .contenedor-form .contacto form .primer-fila .button-send input {
       margin-left: .3rem;
       width: 100%; }
+  .ayuda-buscador h1 {
+    font-size: 1.8rem;
+    width: 100%; }
   footer {
     padding: 2rem 1rem;
-    height: 50vh;
+    height: 60vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     background-color: black; }
   .logo-footer {
-    display: none; } }
+    width: 100%;
+    display: flex;
+    margin-right: 16rem; }
+    .logo-footer img {
+      width: 100%; } }

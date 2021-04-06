@@ -16,13 +16,14 @@ html {
 /* Whatsapp btn*/
 
 .btn-wsp {
+	display: float;
 	position: fixed;
 	z-index: 1;
 	width: 55px;
 	height: 55px;
 	line-height: 55px;
 	bottom: 30px;
-	left: 20px;
+	left: 1800px;
 	background-color: #25d366;
 	text-align: center;
 	border-radius: 40px;
@@ -52,6 +53,13 @@ header {
 		width: 100%;
 		height: 6rem;
 		justify-content: flex-end;
+		#check {
+			display:none;
+		}
+		.checkbtn {
+			display:none;
+			color:white;
+		}
 		.img-logo {
 			margin-right: auto;
 			width: 20%;
@@ -59,8 +67,7 @@ header {
 				width: 90%;
 			}
 			#logotipo-solo {
-				opacity: 0;
-				display:flex;
+				display:none;
 				justify-content: center;
 				align-items: center;	
 				width:3rem;
@@ -186,7 +193,7 @@ header {
 /* Marcas distribuidas */
 
 #subtitulo-marcas {
-	margin: 1rem 0;
+	margin: 1.7rem 0;
 	text-align: center;
 }
 
@@ -1380,6 +1387,9 @@ $secundario: #f4f4fa;
 $ancho: 80%;
 
 @media screen and (max-width: 1024px) {
+	.btn-wsp {
+		left: 900px;
+	}
 	.contenedor-form {
 		.contacto {
 			.contacto__title {
@@ -1584,6 +1594,78 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+	.btn-wsp {
+		left: 650px;
+	}
+	header {
+		nav {
+			#check {
+				display:none;
+			}
+			.checkbtn {
+				cursor: pointer;
+				margin: 0 3rem;
+				position: absolute;
+				display: block;
+				padding:.5rem;
+				text-align: center;
+				width: 1rem;
+				height: 1rem;
+				border: 1px solid lightgray;
+				border-radius: 5px;
+			}
+
+			#check:checked ~ .nav-bar {
+				li {
+					a {
+						left: 37px;
+					}
+				} 
+			}
+			.img-logo {
+				margin-right: auto;
+				width: 20%;
+				#logo-header {
+					width: 90%;
+				}
+				#logotipo-solo {
+					display:block;
+					justify-content: center;
+					align-items: center;	
+					width:3rem;
+					top: 1.7rem;
+					position: absolute;
+					left: 2.7rem;
+				}
+			}
+			ul {
+				list-style: none;
+				li {
+					margin: 0 2rem;
+					a {
+						left: -100%;
+						top: 9.2rem;
+						margin: 0 auto;
+						width: 45.3rem;
+						text-align: center;
+						position: relative;
+						display: inline-block;
+						background-color: rgba(0,0,0,0.7);
+						backdrop-filter:blur(10px);
+					}
+					#contacto {
+						border: 2px solid #c03036;
+						border-radius: 10px;
+						&:hover {
+							border: 2px solid white;
+							background-color: white;
+							color: #c03036;
+						}	
+					}
+				}
+			}
+		}
+	}
 	.inicio-web {
 		width: 100%;
 		text-align: center;
@@ -1603,7 +1685,7 @@ footer {
 		}
 		.imagen-index {
 			margin-top: -10rem;
-			width: 90%;
+			width: 100%;	
 			img {
 				width: 90%;
 			}	
@@ -1825,30 +1907,74 @@ footer {
 	}
 }
 
-@media screen and (max-width: 480px) and (min-width: 320px) {
-	nav {
-		display: flex;
-		flex-wrap: wrap;
-		width: 100%;
-		.img-logo {
-			display: none;
-			a {
-				img{
-					width: 10rem;
+@media screen and (max-width: 500px) {
+	.btn-wsp {
+		left:400px;
+	}
+	header {
+		nav {
+			#check {
+				display:none;
+			}
+			.checkbtn {
+				cursor: pointer;
+				margin: 0 3rem;
+				position: absolute;
+				display: block;
+				padding:.5rem;
+				text-align: center;
+				width: 1rem;
+				height: 1rem;
+				border: 1px solid lightgray;
+				border-radius: 5px;
+			}
+
+			#check:checked ~ .nav-bar {
+				li {
+					a {
+						left: 170px;
+					}
+				} 
+			}
+			.img-logo {
+				margin-right: auto;
+				width: 20%;
+				#logo-header {
+					width: 90%;
+				}
+				#logotipo-solo {
+					display:block;
+					justify-content: center;
+					align-items: center;	
+					width:3rem;
+					top: 1.7rem;
+					position: absolute;
+					left: 2.7rem;
 				}
 			}
-		}
-		.nav-bar {
-			margin: 0 auto;
-			width: 100%;
-			li {
-				width: 100%;
-				a {
-					font-size: .8rem;
-					padding: 0px 8px;
-				}
-				#contacto {
-					border: none;
+			ul {
+				list-style: none;
+				li {
+					margin: 0 2rem;
+					a {
+						left: -100%;
+						top: 9.2rem;
+						margin: 0 auto;
+						width: 45.3rem;
+						text-align: center;
+						position: relative;
+						display: inline-block;
+						background-color: rgba(0,0,0,0.7);
+					}
+					#contacto {
+						border: 2px solid #c03036;
+						border-radius: 10px;
+						&:hover {
+							border: 2px solid white;
+							background-color: white;
+							color: #c03036;
+						}	
+					}
 				}
 			}
 		}
@@ -1922,21 +2048,21 @@ footer {
 	}
 
 	@keyframes slider {
-		0% {margin-top: -2%}
-		20%{margin-top: -2%}
+		0% {margin-top: 0}
+		20%{margin-top: 0}
 
-		25% {margin-top: -87%}
-		45% {margin-top: -87%}
+		25% {margin-top: -72%}
+		45% {margin-top: -72%}
 
-		50% {margin-top: -170%}
-		70% {margin-top: -170%}
+		50% {margin-top: -145%}
+		70% {margin-top: -145%}
 
-		75%{margin-top: -260%}
-		100%{margin-top: -260%;}
+		75%{margin-top: -218%}
+		100%{margin-top: -218%;}
 	}
 
 	.comparte-exp {
-		width: 100%;
+		width: 90%;
 		font-size:$tamaño;
 	}
 	/*productoIndividual */
@@ -2092,15 +2218,27 @@ footer {
 		}
 	}
 
+	.ayuda-buscador {
+		h1 {
+			font-size:1.8rem;
+			width:100%;
+		}
+	}
+
 	footer {
 		padding: 2rem 1rem;
-		height:50vh;
+		height:60vh;
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: flex-start;
 		background-color: black;
 	}
 	.logo-footer {
-		display:none;
+		width:100%;
+		display:flex;
+		margin-right: 16rem;
+		img {
+			width:100%;
+		}
 	}
 }
