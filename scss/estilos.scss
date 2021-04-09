@@ -1580,7 +1580,7 @@ $ancho: 80%;
 		}
 	}
 	.specs {
-		margin-top:25rem;
+		margin-top:40rem;
 		width:85%;
 	}
 }
@@ -1810,7 +1810,7 @@ footer {
 		}
 	}
 	.specs {
-		margin-top:16rem;
+		margin-top:30rem;
 		width:85%;
 	}
 	.conocenos {
@@ -2125,6 +2125,7 @@ footer {
 		width:100%;
 		height:58vh;
 		.specs {
+			margin-top:14rem;
 			width:80%;
 			heigh:50vh;
 		}
@@ -2238,7 +2239,6 @@ footer {
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: flex-start;
-			background-color: black;
 		}
 		.logo-footer {
 			width:100%;
@@ -2249,134 +2249,199 @@ footer {
 			}
 		}
 	}
+}
 
-
-	@media screen and (max-width: 320px) {
-		.btn-wsp {
-			left:250px;
-		}
-		header {
-			nav {
-				#check {
-					display:none;
-				}
-				.checkbtn {
-					cursor: pointer;
-					margin: 0 3rem;
-					position: absolute;
-					display: block;
-					padding:.5rem;
-					text-align: center;
-					width: 1rem;
-					height: 1rem;
-					border: 1px solid lightgray;
-					border-radius: 5px;
-				}
-
-				#check:checked ~ .nav-bar {
-					li {
-						a {
-							left: 250px;
-						}
-					} 
-				}
-				.img-logo {
-					margin-right: auto;
-					width: 20%;
-					#logo-header {
-						width: 90%;
-					}
-					#logotipo-solo {
-						display:block;
-						justify-content: center;
-						align-items: center;	
-						width:3rem;
-						top: 1.7rem;
-						position: absolute;
-						left: 2.7rem;
-					}
-				}
-				ul {
-					list-style: none;
-					li {
-						margin: 0 2rem;
-						a {
-							left: -100%;
-							top: 9.2rem;
-							margin: 0 auto;
-							width: 45.3rem;
-							text-align: center;
-							position: relative;
-							display: inline-block;
-							background-color: rgba(0,0,0,0.7);
-						}
-						#contacto {
-							border: 2px solid #c03036;
-							border-radius: 10px;
-							&:hover {
-								border: 2px solid white;
-								background-color: white;
-								color: #c03036;
-							}	
-						}
-					}
-				}
+@media screen and (max-width: 320px) {
+	.btn-wsp {
+		left:250px;
+	}
+	header {
+		nav {
+			#check {
+				display:none;
 			}
-		}
-		.inicio-web {
-			width: 100%;
-			text-align: center;
-			.principal {
-				margin: 0 auto;
-				width: 100%;
-				height: 45vh;
-				overflow: hidden;
-				.introduccion-text {
-					width: 80%;
-					h1 {
-						margin-top: 1rem;
-						font-size: 2rem;
-						line-height: 2.5rem;
-					}
-				}
-				.botones {
-					display:flex;
-					.btn-1 {
-						margin-right:.5rem;
-						width:4rem;
-					}
-					.btn-2 {
-						width:10rem;
-					}
-				}
+			.checkbtn {
+				cursor: pointer;
+				margin: 0 3rem;
+				position: absolute;
+				display: block;
+				padding:.5rem;
+				text-align: center;
+				width: 1rem;
+				height: 1rem;
+				border: 1px solid lightgray;
+				border-radius: 5px;
 			}
-			.imagen-index {
-				margin-top: -10rem;
-				width: 100%;
-				img {
+
+			#check:checked ~ .nav-bar {
+				li {
+					a {
+						left: 250px;
+					}
+				} 
+			}
+			.img-logo {
+				margin-right: auto;
+				width: 20%;
+				#logo-header {
 					width: 90%;
-				}	
+				}
+				#logotipo-solo {
+					display:block;
+					justify-content: center;
+					align-items: center;	
+					width:3rem;
+					top: 1.7rem;
+					position: absolute;
+					left: 2.7rem;
+				}
 			}
-		}
-		.tarjetas-compra {
-			.tarjeta-1 {
-				width:85%;
-				overflow:hidden;
-				.thumbnail {
-					width:17rem;
-					margin-bottom:1rem;
+			ul {
+				list-style: none;
+				li {
+					margin: 0 2rem;
+					a {
+						left: -100%;
+						top: 9.2rem;
+						margin: 0 auto;
+						width: 45.3rem;
+						text-align: center;
+						position: relative;
+						display: inline-block;
+						background-color: rgba(0,0,0,0.7);
+					}
+					#contacto {
+						border: 2px solid #c03036;
+						border-radius: 10px;
+						&:hover {
+							border: 2px solid white;
+							background-color: white;
+							color: #c03036;
+						}	
+					}
 				}
 			}
 		}
-		footer {
-			height:80vh;
-			.logo-footer {
-				width:100%;
+	}
+	.inicio-web {
+		width: 100%;
+		text-align: center;
+		.principal {
+			margin: 0 auto;
+			width: 100%;
+			height: 45vh;
+			overflow: hidden;
+			.introduccion-text {
+				width: 80%;
+				h1 {
+					margin-top: 1rem;
+					font-size: 2rem;
+					line-height: 2.5rem;
+				}
+			}
+			.botones {
 				display:flex;
-				img {
-					margin-left:2.5rem;
+				.btn-1 {
+					margin-right:.5rem;
+					width:4rem;
+				}
+				.btn-2 {
 					width:10rem;
 				}
+			}
+		}
+		.imagen-index {
+			margin-top: -10rem;
+			width: 100%;
+			img {
+				width: 90%;
+			}	
+		}
+	}
+	.tarjetas-compra {
+		.tarjeta-1 {
+			width:85%;
+			overflow:hidden;
+			.thumbnail {
+				width:17rem;
+				margin-bottom:1rem;
+			}
+		}
+	}
+	.contenedor-ventas {
+		width:100%;
+		.imagen-venta {
+			margin: 0 auto;
+			margin-top:8rem;
+			width:85%;
+			.ventas__imagen {
+				width:80%;
+			}
+		}
+		.info-vtas {
+			width:95%;
+			height:100rem;
+			.titulo__vtas {
+				font-size:2.5rem;
+			}
+			.precio-ranked {
+				width:100%;
+				.precio__vtas {
+					font-size:2.5rem;
+					width:75%;	
+				}
+			}
+			.fast-specs {
+				width:100%;
+				.card-specs {
+					height:6rem;
+					width:50%;
+					p {
+						font-size:.8rem;
+					}
+				}
+			}
+			.comprar {
+				width:100%;
+				display:flex;
+				justify-content:center;
+				font-family:'Montserrat';
+				.comprar__link {
+					color:#f4f4fa;
+					text-decoration:none;
+					text-align:center;
+					padding:1rem;
+					width:85%;
+					background-color:#c03036;
+					border-radius:10px;
+					&:hover {
+						background-color: #91222a;
+						color:#f4f4fa;
+					}
+				}
+			}
+		}
+	}
+	.specs-content {
+		width:100%;
+		height:58vh;
+		.specs {
+			background-color:red;
+			width:80%;
+			heigh:50vh;
+		}
+	}
+	#interesar-text {
+		font-size:$tamaño;
+	}
+	footer {
+		height:80vh;
+		.logo-footer {
+			width:100%;
+			display:flex;
+			img {
+				margin-left:2.5rem;
+				width:10rem;
 			}
 		}
 	}
