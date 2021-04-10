@@ -782,7 +782,7 @@ header {
       position: absolute;
       top: 0px;
       width: 100%;
-      height: 105vh;
+      min-height: 105vh;
       z-index: -1;
       overflow: hidden; }
       .conocenos .conocenos-idea .fondo-conocenos .circle {
@@ -1200,7 +1200,7 @@ footer {
       margin-top: -10rem;
       width: 100%; }
       .inicio-web .imagen-index img {
-        width: 65%; }
+        width: 60%; }
   .image-logo {
     overflow: hidden; }
     .image-logo img {
@@ -1233,17 +1233,17 @@ footer {
     20% {
       margin-top: -0; }
     25% {
-      margin-top: -36%; }
+      margin-top: -35%; }
     45% {
-      margin-top: -36%; }
+      margin-top: -35%; }
     50% {
-      margin-top: -72%; }
+      margin-top: -70%; }
     70% {
-      margin-top: -72%; }
+      margin-top: -70%; }
     75% {
-      margin-top: -110%; }
+      margin-top: -105%; }
     100% {
-      margin-top: -110%; } }
+      margin-top: -105%; } }
   .producto-vendido {
     margin-top: 7rem; }
   .tarjetas-contenedor {
@@ -1284,6 +1284,8 @@ footer {
           .contenedor-ventas .info-vtas .comprar .comprar__link:hover {
             background-color: #91222a;
             color: #f4f4fa; }
+  .conocenos .conocenos-idea .fondo-conocenos {
+    min-height: 120vh; }
   .specs {
     width: 85%; }
   footer {
@@ -1367,7 +1369,7 @@ footer {
       margin-top: -10rem;
       width: 100%; }
       .inicio-web .imagen-index img {
-        width: 90%; }
+        width: 70%; }
   .image-logo {
     overflow: hidden; }
     .image-logo img {
@@ -1394,17 +1396,17 @@ footer {
     20% {
       margin-top: 0%; }
     25% {
-      margin-top: -54%; }
+      margin-top: -52%; }
     45% {
-      margin-top: -54%; }
+      margin-top: -52%; }
     50% {
-      margin-top: -105%; }
+      margin-top: -100%; }
     70% {
-      margin-top: -105%; }
+      margin-top: -100%; }
     75% {
-      margin-top: -158%; }
+      margin-top: -150%; }
     100% {
-      margin-top: -158%; } }
+      margin-top: -150%; } }
   #phantom-2 {
     width: 60%; }
   .productos-card-1 img {
@@ -1517,7 +1519,7 @@ footer {
     background-color: black; }
     footer .logo-footer {
       display: block;
-      width: 40%; } }
+      width: 30%; } }
 
 @media screen and (max-width: 480px) {
   .btn-wsp {
@@ -1686,6 +1688,8 @@ footer {
   #interesar-text {
     font-size: 1rem; }
   /* Coocenos */
+  .conocenos #titulo-conocenos {
+    font-size: 2rem; }
   .conocenos #subtitulo-conocenos {
     font-size: 1.3rem; }
   .conocenos .texto-conocenos {
@@ -1711,8 +1715,8 @@ footer {
         .conocenos .conocenos-idea .contenedor-2 .parrafo-dueño #parrafo-2 {
           margin: 2rem 0;
           text-align: center; }
-  .conocenos .fondo-conocenos {
-    min-height: 148vh; }
+    .conocenos .conocenos-idea .fondo-conocenos {
+      min-height: 165vh; }
   .contenedor-form h1 {
     font-size: 1rem; }
   .contenedor-form .contacto .contacto__title h2 {
@@ -1752,22 +1756,95 @@ footer {
     width: 100%; }
   footer {
     padding: 2rem 1rem;
-    min-height: 77vh;
+    min-height: 85vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start; }
   .logo-footer {
     width: 100%;
     display: flex;
-    margin-right: 15rem; }
+    margin-right: 18rem; }
     .logo-footer img {
       width: 100%; } }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 425px) {
   .btn-wsp {
-    left: 355px; }
+    left: 350px; }
   header nav #check:checked ~ .nav-bar li a {
-    left: 195px; }
+    left: 205px; }
+  .inicio-web {
+    width: 100%;
+    text-align: center; }
+    .inicio-web .principal {
+      margin: 0 auto;
+      width: 100%;
+      min-height: 65vh;
+      overflow: hidden; }
+      .inicio-web .principal .introduccion-text {
+        width: 85%; }
+        .inicio-web .principal .introduccion-text h1 {
+          margin-top: 6.5rem;
+          font-size: 1.5rem;
+          line-height: 2.2rem; }
+      .inicio-web .principal .botones {
+        display: flex;
+        justify-content: center; }
+        .inicio-web .principal .botones .btn-1 {
+          margin-right: .5rem;
+          width: 6rem; }
+        .inicio-web .principal .botones .btn-2 {
+          width: 8rem; }
+    .inicio-web .imagen-index {
+      margin-top: -5rem;
+      width: 100%; }
+      .inicio-web .imagen-index img {
+        width: 90%; }
+  .logo-footer {
+    width: 100%;
+    display: flex;
+    margin-right: 15rem; }
+    .logo-footer img {
+      width: 100%; }
+  .ayuda-buscador {
+    width: 100%; }
+    .ayuda-buscador .buscador-soporte {
+      width: 90%; } }
+
+@media screen and (max-width: 375px) {
+  header nav #check:checked ~ .nav-bar li a {
+    left: 220px; }
+  .btn-wsp {
+    left: 290px; }
+  .inicio-web {
+    width: 100%;
+    text-align: center; }
+    .inicio-web .principal {
+      margin: 0 auto;
+      width: 100%;
+      min-height: 65vh;
+      overflow: hidden; }
+      .inicio-web .principal .introduccion-text {
+        width: 80%; }
+        .inicio-web .principal .introduccion-text h1 {
+          margin-top: 6.5rem;
+          font-size: 1.5rem;
+          line-height: 2.2rem; }
+      .inicio-web .principal .botones {
+        display: flex; }
+        .inicio-web .principal .botones .btn-1 {
+          margin-right: .5rem;
+          width: 5.7rem; }
+        .inicio-web .principal .botones .btn-2 {
+          width: 7rem; }
+    .inicio-web .imagen-index {
+      margin-top: -5rem;
+      width: 100%; }
+      .inicio-web .imagen-index img {
+        width: 90%; }
+  .contacto__info {
+    flex-direction: column; }
+    .contacto__info p {
+      font-size: .8rem; }
   .logo-footer {
     width: 100%;
     display: flex;
