@@ -2331,11 +2331,11 @@ $ancho: 83%;
 		25% {margin-top: -87%}
 		45% {margin-top: -87%}
 
-		50% {margin-top: -150%}
-		70% {margin-top: -150%}
+		50% {margin-top: -175%}
+		70% {margin-top: -175%}
 
-		75%{margin-top: -225%}
-		100%{margin-top: -225%;}
+		75%{margin-top: -260%}
+		100%{margin-top: -260%;}
 	}
 	.logo-footer {
 		width:100%;
@@ -2402,6 +2402,19 @@ $ancho: 83%;
 				width: 90%;
 			}	
 		}
+	}
+	@keyframes slider {
+		0% {margin-top: 0}
+		20%{margin-top: 0}
+
+		25% {margin-top: -100%}
+		45% {margin-top: -100%}
+
+		50% {margin-top: -200%}
+		70% {margin-top: -200%}
+
+		75%{margin-top: -306%}
+		100%{margin-top: -306%;}
 	}
 	.contacto__info {
 		flex-direction:column;
