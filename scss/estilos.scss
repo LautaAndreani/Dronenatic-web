@@ -677,6 +677,7 @@ header {
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
+	margin-top:7rem;
 	.imagen-venta {
 		display: flex;
 		justify-content: center;
@@ -788,6 +789,7 @@ header {
 	width: 60%;
 	background-color:lightgray;
 	border-radius: 15px;
+	margin-top:7rem;
 	padding:2rem;
 	display:flex;
 	font-family:'Montserrat';
@@ -1540,6 +1542,7 @@ $ancho: 83%;
 	/*productoIndividual */
 
 	.contenedor-ventas {
+		margin-top:1rem;
 		width:100%;
 		.imagen-venta {
 			margin: 0 auto;
@@ -1579,7 +1582,6 @@ $ancho: 83%;
 		}
 	}
 	.specs {
-		margin-top:40rem;
 		width:85%;
 	}
 	footer {
@@ -1811,7 +1813,6 @@ $ancho: 83%;
 		}
 	}
 	.specs {
-		margin-top:30rem;
 		width:85%;
 	}
 	.conocenos {
