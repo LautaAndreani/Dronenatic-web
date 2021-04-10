@@ -69,6 +69,9 @@ header {
       list-style: none; }
       header nav ul li {
         margin: 0 2rem; }
+        header nav ul li .resaltado {
+          color: #c03036;
+          font-weight: bolder; }
         header nav ul li a {
           outline: none;
           padding: 10px 15px;
@@ -76,7 +79,6 @@ header {
           color: white;
           transition: 0.5s ease; }
           header nav ul li a:hover {
-            font-weight: 500;
             color: gray; }
         header nav ul li #contacto {
           border: 2px solid #c03036;

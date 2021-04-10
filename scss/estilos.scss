@@ -80,6 +80,10 @@ header {
 			list-style: none;
 			li {
 				margin: 0 2rem;
+				.resaltado {
+					color:#c03036;
+					font-weight:bolder;
+				}
 				a {
 					outline:none;
 					padding: 10px 15px;
@@ -87,7 +91,6 @@ header {
 					color: white;
 					transition: 0.5s ease;
 					&:hover {
-						font-weight: 500;
 						color: gray;
 					}
 				}
