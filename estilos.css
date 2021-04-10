@@ -1685,6 +1685,8 @@ footer {
   #interesar-text {
     font-size: 1rem; }
   /* Coocenos */
+  .conocenos #subtitulo-conocenos {
+    font-size: 1.3rem; }
   .conocenos .texto-conocenos {
     width: 85%;
     justify-content: center; }
@@ -1698,7 +1700,7 @@ footer {
       .conocenos .conocenos-idea .parrafo-dueño #parrafo-sub {
         text-align: center; }
     .conocenos .conocenos-idea .card-conocenos .parrafo-cnc {
-      width: 70%; }
+      width: 60%; }
     .conocenos .conocenos-idea .contenedor-2 {
       flex-direction: column; }
       .conocenos .conocenos-idea .contenedor-2 .parrafo-dueño {
@@ -1708,6 +1710,8 @@ footer {
         .conocenos .conocenos-idea .contenedor-2 .parrafo-dueño #parrafo-2 {
           margin: 2rem 0;
           text-align: center; }
+  .conocenos .fondo-conocenos {
+    min-height: 148vh; }
   .contenedor-form h1 {
     font-size: 1rem; }
   .contenedor-form .contacto .contacto__title h2 {
@@ -1755,6 +1759,18 @@ footer {
     width: 100%;
     display: flex;
     margin-right: 15rem; }
+    .logo-footer img {
+      width: 100%; } }
+
+@media screen and (max-width: 480px) {
+  .btn-wsp {
+    left: 355px; }
+  header nav #check:checked ~ .nav-bar li a {
+    left: 195px; }
+  .logo-footer {
+    width: 100%;
+    display: flex;
+    margin-right: 13rem; }
     .logo-footer img {
       width: 100%; } }
 
@@ -1841,10 +1857,38 @@ footer {
     .tarjetas-compra .tarjeta-1 .thumbnail {
       width: 17rem;
       margin-bottom: 1rem; }
+  .grid-vendido .producto-vendido {
+    width: 85%; }
+    .grid-vendido .producto-vendido .masVendido h1 {
+      font-size: 1.3rem; }
+    .grid-vendido .producto-vendido .masVendido h2 {
+      font-size: 1rem; }
+    .grid-vendido .producto-vendido .masVendido p {
+      font-size: .9rem; }
   .tarjetas-contenedor .productos-card-1 {
     width: 19rem; }
     .tarjetas-contenedor .productos-card-1 .precio-card {
       margin-left: 10rem; }
+  @keyframes slider {
+    0% {
+      margin-top: 0; }
+    20% {
+      margin-top: 0; }
+    25% {
+      margin-top: -132%; }
+    45% {
+      margin-top: -132%; }
+    50% {
+      margin-top: -262%; }
+    70% {
+      margin-top: -262%; }
+    75% {
+      margin-top: -390%; }
+    100% {
+      margin-top: -390%; } }
+  /* Soporte */
+  .ayuda-buscador .buscador-soporte {
+    width: 80%; }
   .contenedor-ventas {
     width: 100%; }
     .contenedor-ventas .imagen-venta {
@@ -1855,7 +1899,7 @@ footer {
         width: 80%; }
     .contenedor-ventas .info-vtas {
       width: 95%;
-      height: 100rem; }
+      min-height: 30rem; }
       .contenedor-ventas .info-vtas .titulo__vtas {
         font-size: 1.5rem; }
       .contenedor-ventas .info-vtas .specs__vtas {
@@ -1893,7 +1937,6 @@ footer {
     max-height: 75vh;
     overflow: hidden; }
     .specs-content .specs {
-      margin-top: 7rem;
       width: 75%;
       max-height: 50vh;
       overflow: hidden; }
@@ -1901,6 +1944,20 @@ footer {
         font-size: .7rem; }
   #interesar-text {
     font-size: 1rem; }
+  /* conocenos */
+  .conocenos #subtitulo-conocenos {
+    font-size: 1.2rem; }
+  /* Contacto */
+  .contacto .contacto__info {
+    flex-direction: column; }
+    .contacto .contacto__info p {
+      font-size: .8rem; }
+  .contacto .primer-fila .sexo {
+    width: 100%; }
+    .contacto .primer-fila .sexo p {
+      margin: -.7rem; }
+    .contacto .primer-fila .sexo .comentarios {
+      width: 10%; }
   footer {
     height: 80vh; }
     footer .logo-footer {

@@ -2139,6 +2139,9 @@ $ancho: 83%;
 	}
 	/* Coocenos */
 	.conocenos {
+		#subtitulo-conocenos {
+			font-size:1.3rem;
+		}
 		.texto-conocenos {
 			width:85%;
 			justify-content:center;
@@ -2157,8 +2160,9 @@ $ancho: 83%;
 			}
 			.card-conocenos {
 				.parrafo-cnc {
-					width:70%;
+					width:60%;
 				}
+
 			}
 			.contenedor-2 {
 				flex-direction: column;
@@ -2173,6 +2177,9 @@ $ancho: 83%;
 					}
 				}
 			}
+		}
+		.fondo-conocenos {
+			min-height: 148vh;
 		}
 	}
 	.contenedor-form {
@@ -2247,6 +2254,31 @@ $ancho: 83%;
 		width:100%;
 		display:flex;
 		margin-right: 15rem;
+		img {
+			width:100%;
+		}
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.btn-wsp {
+		left:355px;
+	}
+	header {
+		nav {
+			#check:checked ~ .nav-bar {
+				li {
+					a {
+						left: 195px;
+					}
+				} 
+			}
+		}
+	}
+	.logo-footer {
+		width:100%;
+		display:flex;
+		margin-right: 13rem;
 		img {
 			width:100%;
 		}
@@ -2370,6 +2402,24 @@ $ancho: 83%;
 			}
 		}
 	}
+
+	.grid-vendido {
+		.producto-vendido {
+			width:85%;
+			.masVendido {
+				h1 {
+					font-size:1.3rem;
+				}
+				h2 {
+					font-size:1rem;
+				}
+				p {
+					font-size:.9rem;
+				}
+			}
+		}
+	}
+
 	.tarjetas-contenedor {
 		.productos-card-1 {
 			width:19rem;
@@ -2378,8 +2428,25 @@ $ancho: 83%;
 			}
 		}
 	}
+	@keyframes slider {
+		0% {margin-top: 0}
+		20%{margin-top: 0}
 
+		25% {margin-top: -132%}
+		45% {margin-top: -132%}
 
+		50% {margin-top: -262%}
+		70% {margin-top: -262%}
+
+		75%{margin-top: -390%}
+		100%{margin-top: -390%;}
+	}
+	/* Soporte */
+	.ayuda-buscador {
+		.buscador-soporte {
+			width:80%;
+		}
+	}
 	.contenedor-ventas {
 		width:100%;
 		.imagen-venta {
@@ -2392,7 +2459,7 @@ $ancho: 83%;
 		}
 		.info-vtas {
 			width:95%;
-			height:100rem;
+			min-height:30rem;
 			.titulo__vtas {
 				font-size:1.5rem;
 			}
@@ -2442,7 +2509,6 @@ $ancho: 83%;
 		max-height:75vh;
 		overflow:hidden;
 		.specs {
-			margin-top:7rem;
 			width:75%;
 			max-height:50vh;
 			overflow:hidden;
@@ -2455,6 +2521,37 @@ $ancho: 83%;
 	}
 	#interesar-text {
 		font-size:$tamaño;
+	}
+	/* conocenos */
+	.conocenos {
+		#subtitulo-conocenos {
+			font-size:1.2rem;
+		}
+		.card-conocenos {
+			.parrafo-cnc {
+			}
+		}
+	}
+
+	/* Contacto */
+	.contacto {
+		.contacto__info {
+			flex-direction:column;
+			p {
+				font-size: .8rem;
+			}
+		}
+		.primer-fila {
+			.sexo {
+				width:100%;
+				p {
+					margin: -.7rem;
+				}
+				.comentarios {
+					width:10%;
+				}
+			}
+		}
 	}
 	footer {
 		height:80vh;
