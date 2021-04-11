@@ -1384,6 +1384,23 @@ footer {
 		width: 10rem;
 	}
 }
+.creador {
+	padding:2rem;
+	background-color:black;
+	text-align:center;
+	p {
+		padding:1rem;
+		font-size:.8rem;
+		color:#f4f4fa;
+		text-align:center;
+		background-color:black;
+	}
+	a{
+		color:gray;
+		text-decoration:none;
+		margin:.4rem;
+	}
+}
 $tamaño: 1rem;
 $principal: #c03036;
 $secundario: #f4f4fa;

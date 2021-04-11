@@ -1145,6 +1145,21 @@ footer {
     margin-top: 3.5rem;
     width: 10rem; }
 
+.creador {
+  padding: 2rem;
+  background-color: black;
+  text-align: center; }
+  .creador p {
+    padding: 1rem;
+    font-size: .8rem;
+    color: #f4f4fa;
+    text-align: center;
+    background-color: black; }
+  .creador a {
+    color: gray;
+    text-decoration: none;
+    margin: .4rem; }
+
 /* contacto */
 @media screen and (max-width: 1024px) {
   .btn-wsp {
