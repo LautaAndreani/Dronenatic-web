@@ -1483,6 +1483,8 @@ footer {
         text-align: center; }
       .conocenos .conocenos-idea .parrafo-dueño #parrafo-sub {
         text-align: center; }
+    .conocenos .conocenos-idea .fondo-conocenos .circle {
+      display: none; }
   .conocenos .contenedor-2 {
     flex-direction: column; }
     .conocenos .contenedor-2 .parrafo-dueño {
