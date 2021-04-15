@@ -1161,6 +1161,51 @@ footer {
     margin: .4rem; }
 
 /* contacto */
+@media screen and (max-width: 1366px) {
+  .btn-wsp {
+    left: 1280px; }
+  .tarjetas-contenedor {
+    grid-template-columns: repeat(2, 30%); }
+  @keyframes slider {
+    0% {
+      margin-top: -0; }
+    20% {
+      margin-top: -0; }
+    25% {
+      margin-top: -42%; }
+    45% {
+      margin-top: -42%; }
+    50% {
+      margin-top: -88%; }
+    70% {
+      margin-top: -88%; }
+    75% {
+      margin-top: -130%; }
+    100% {
+      margin-top: -130%; } }
+  .contenedor-ventas .imagen-venta {
+    margin: 0 auto;
+    margin-top: 3rem;
+    width: 50%; }
+    .contenedor-ventas .imagen-venta .ventas__imagen {
+      width: 100%; }
+  .contenedor-ventas .info-vtas {
+    width: 40%; }
+    .contenedor-ventas .info-vtas .precio-ranked {
+      width: 80%; }
+      .contenedor-ventas .info-vtas .precio-ranked .precio__vtas {
+        width: 75%; }
+    .contenedor-ventas .info-vtas .comprar {
+      width: 85%; }
+  .conocenos .conocenos-idea .fondo-conocenos {
+    min-height: 130vh; }
+  .contenedor-form .contacto .contacto__title {
+    display: flex;
+    width: 50%; }
+    .contenedor-form .contacto .contacto__title h2 {
+      text-align: center;
+      font-size: 1.4rem; } }
+
 @media screen and (max-width: 1024px) {
   .btn-wsp {
     left: 900px; }
