@@ -2605,9 +2605,9 @@ $ancho: 83%;
 			.introduccion-text {
 				width: 80%;
 				h1 {
-					margin-top: 1rem;
-					font-size: 2rem;
-					line-height: 2.5rem;
+					margin-top: 6.5rem;
+					font-size: 1.5rem;
+					line-height: 2.2rem;
 				}
 			}
 			.botones {
@@ -2761,12 +2761,15 @@ $ancho: 83%;
 	}
 	/* conocenos */
 	.conocenos {
+		#titulo-conocenos {
+			width:70%;
+		}
+		.texto-conocenos {
+			width:80%;
+			text-align:center;
+		}
 		#subtitulo-conocenos {
 			font-size:1.2rem;
-		}
-		.card-conocenos {
-			.parrafo-cnc {
-			}
 		}
 	}
 
